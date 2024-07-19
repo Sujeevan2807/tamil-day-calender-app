@@ -3,14 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Tamil Day Calender App</title>
 
     <!-- TailwindCSS -->
     <link rel="stylesheet" href="./assets/css/index.css" />
   </head>
-  <body>
-    <!-- Write your HTML here -->
-    <div id="app" class="text-3xl font-bold">Hello Vite HTML & Tailwind!</div>
+  <body class="bg-slate-800">
+    <div class="min-h-screen flex flex-col items-center justify-center">
+      <form id="dateForm" class="max-w-6xl bg-slate-600 rounded p-10 text-center">
+        <label
+          for="dateSelect"
+          class="block text-white text-xl font-semibold mb-5"
+          >Select the Date</label
+        >
+        <input class="py-2 px-2 rounded outline-none w-80" type="date" />
+        <button
+          class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-2 rounded"
+        >
+          Get Calender
+        </button>
+      </form>
+      <div class="max-w-6xl bg-slate-700 p-5 mt-10">
+        <img
+          id="dayImage"
+          src="https://i.gifer.com/ZKZg.gif"
+          class="mx-auto"
+          alt=""
+        />
+      </div>
+    </div>
     <script type="module" src="./assets/js/main.js"></script>
   </body>
 </html>
